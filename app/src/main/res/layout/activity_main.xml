@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+
+        android:background="#000"
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </RelativeLayout>
+    <RelativeLayout
+
+
+
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:id="@+id/camera"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/front_camera"
+            />
+        <ImageView
+            android:id="@+id/btnCancel"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/close"/>
+        <ImageView
+            android:id="@+id/btnCheck"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/check"/>
+        <ImageView
+            android:layout_marginBottom="2dp"
+            android:padding="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/gallery"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/gallery"></ImageView>
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/click"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/click_drawable"
+            ></ImageView>
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_weight="1.7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.2"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/imageHint"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:src="@drawable/eye"
+                    />
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/imageSeek"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="6dp"
+                    android:src="@drawable/seek"
+                    />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/glLayout"
+                android:layout_weight="1.6"
+                android:background="@drawable/grid_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <com.clicksaw.DraggableGridView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#000"
+                    android:gravity="center"
+
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:numColumns="auto_fit">
+                </com.clicksaw.DraggableGridView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.2"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                android:textSize="20sp"
+                android:text="1:33"
+                android:id="@+id/tvTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:id="@+id/settingsView"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_alignParentBottom="true"
+            >
+
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_toRightOf="@+id/imageHint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
